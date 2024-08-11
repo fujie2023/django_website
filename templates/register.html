@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>测试</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="/post-user/" method='post'>
+            {% csrf_token %}
+            <h>名字</h>
+            <input type="text" name="user-name">
+            <h>密码</h>
+            <input type="text" name="user-password">
+            <h>手机号</h>
+            <input type="text" name="user-phone">
+            <h>公司</h>
+            <input type="text" name="user-company">
+            <input type="submit" value="确定">
+        </form>
+    </body>
+</html>
