@@ -5,6 +5,7 @@ from blog.models import User
 from django.http import HttpResponse
 
 def add_user_post(request):
+    print(request.POST)
     user_company = request.POST['user-company']
     user_name = request.POST['user-name']
     user_password = request.POST['user-password']

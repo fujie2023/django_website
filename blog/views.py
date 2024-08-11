@@ -16,7 +16,10 @@ def db_handle(request):
 
 def add_user(request):
     if(request.POST):
+        print('in add_user_post')
         add.add_user_post(request)
+    else:
+        print('not in add_user_post')
     return render(request, 'register.html')
 
 def query_user(request):

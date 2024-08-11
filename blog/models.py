@@ -31,3 +31,11 @@ class User(models.Model):
     password = models.CharField(max_length=32)
     phone = models.CharField(max_length=32)
     createtime = models.DateTimeField(null=True)
+
+class Verification(models.Model):
+    base_board_sn = models.CharField(max_length=300)
+    bios_sn = models.CharField(max_length=300)
+    cpu_id = models.CharField(max_length=300)
+    cpu_name= models.CharField(max_length=300)
+    cs_uuid = models.CharField(max_length=300)
+    disk_sn = models.CharField(max_length=300)
